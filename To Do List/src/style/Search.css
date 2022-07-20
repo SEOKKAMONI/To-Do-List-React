@@ -1,0 +1,13 @@
+.inputForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+}
+
+.inputText {
+    padding: 8px;
+    width: 250px;
+    outline: none;
+}
