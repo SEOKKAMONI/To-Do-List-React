@@ -1,0 +1,30 @@
+.InputMemo {
+    height: 100px;
+}
+
+
+.form_memo {
+    position: relative;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_memo {
+    border: 1px solid rgb(204, 203, 203);
+    width: 275px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.add_btn {
+    border: 1px solid rgb(204, 203, 203);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}

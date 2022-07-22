@@ -1,0 +1,15 @@
+.todo {
+    max-width: 400px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.item {
+    border-bottom: 1px solid black;
+    list-style: none;
+    padding: 8px;
+}
+
+.todo_text {
+    margin-left: 20px;
+}
