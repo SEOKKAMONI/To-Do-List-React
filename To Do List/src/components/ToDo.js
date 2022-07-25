@@ -26,6 +26,8 @@ function ToDo() {
 
     return (
         <div>
+            <h1 className="title">To Do List</h1>
+            <h4 className="subTitle">"자신의 할일을 입력하세요"</h4>
             <div className="ToDoArea">
                 <form className="form_memo" onSubmit={onSubmit}>
                     <input
@@ -48,6 +50,9 @@ function ToDo() {
                     {toDos.map((item, index) => (
                         <List 
                             item = {item}
+                            toDos = {toDos}
+                            index = {index}
+                            key = {index}
                         />
                      ))}
                 </ul>

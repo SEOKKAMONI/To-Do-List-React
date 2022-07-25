@@ -8,9 +8,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     list-style: none;
-    padding: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
 }
 
 .toDoText {
@@ -24,6 +25,11 @@
 
 .deleteBtn {
     border: none;
-    background-color: #fff;
+    font-weight: 530;
+    background-color: rgb(251, 246, 240);
     cursor: pointer;
+}
+
+.deleteBtn:hover {
+    color: red;
 }

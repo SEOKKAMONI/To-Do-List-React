@@ -3,13 +3,29 @@
     padding: 0;
 }
 
-.container {
+body {
+    min-height: 100vh;
+}
+
+.title {
     position: relative;
-    top: 60px;
+    top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.subTitle {
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.container {
     margin: 0 auto;
 
-    width: 450px;
-    min-height: 500px;
-    border: 1px solid black;
+    max-width: 700px;
+    min-height: 100vh;
 
+    background-color: rgb(251, 246, 240);
+    box-shadow: 0.3px 0.3px 0.3px -1px;
 }
