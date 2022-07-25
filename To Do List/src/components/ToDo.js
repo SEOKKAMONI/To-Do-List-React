@@ -4,11 +4,12 @@ import List from "./List";
 function ToDo() {
     const [toDo, setToDo] = useState("");
     const [toDos, setToDos] = useState([]);
-    const [checkBox, setCheckBox] = useState(false);
 
     const onSubmit = (event) => {
         event.preventDefault();
         console.log(toDo)
+        console.log(toDos)
+
         if (toDo === "") {
             return; // 만약 toDo 가 비어있다면 아무 동작도 안함
         }
@@ -21,10 +22,6 @@ function ToDo() {
 
     const onChange = (event) => {
         setToDo(event.target.value); // 값이 바뀔때마다 바뀐값을 toDo에 넣어줌
-    }
-
-    const toDoCheck = (event) => {
-        setCheckBox(event.target.checked)
     }
 
     return (
@@ -48,16 +45,11 @@ function ToDo() {
 
             <div className="MemoArea">
                 <ul className="todo">
-                    {
-                        toDos.map((item, index) => 
+                    {toDos.map((item, index) => (
                         <List 
-                            index = {index}
                             item = {item}
-                            checkBox = {checkBox}
-                            toDoCheck = {toDoCheck}
                         />
-                        )
-                    }
+                     ))}
                 </ul>
             </div>
         </div>

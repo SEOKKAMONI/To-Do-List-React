@@ -1,7 +1,15 @@
-function List( {index, item, checkBox, toDoCheck} ) {
+import { useState } from "react";
+
+function List( {item} ) {
+    const [checkBox, setCheckBox] = useState(false);
+
+    const toDoCheck = (event) => {
+        setCheckBox(event.target.checked)
+    }
+
     return (
         
-        <li className="item" key={index}>
+        <li className="item">
             <div className="itemArea">
                 <input
                     onClick={toDoCheck}
