@@ -2,14 +2,13 @@ import "./style/Container.css"
 import "./style/InputMemo.css"
 import "./style/Memo.css"
 
-import InputMemo from "./components/InputMemo"
-import Memo from "./components/Memo"
+import ToDo from "./components/ToDo"
 
 function App() {
+
   return (
     <div className="container">
-      <InputMemo />
-      <Memo />
+      <ToDo />
     </div>
   );
 }

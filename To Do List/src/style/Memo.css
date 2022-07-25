@@ -5,11 +5,25 @@
 }
 
 .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     list-style: none;
     padding: 8px;
 }
 
-.todo_text {
+.toDoText {
     margin-left: 20px;
+    font-size: 16px;
+}
+
+.finish {
+    text-decoration: line-through;
+}
+
+.deleteBtn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
 }
